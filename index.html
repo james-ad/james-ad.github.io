@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Savings Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+    <h1>Savings Calculator</h1>
+<!-- Create input for check amounts to be deposited later -->
+    <input type="number" id="check-input" placeholder="$0.00">
+ <!-- Make a slider to adjust the percentage of the check that is to be saved.
+Also, create divs to store slider readout and percentage readout -->
+    <input type="range" min="1" max="100" value="10" name="" id="percentage" class="slider">
+    <div class="readouts" id="percentage-readout">10%</div>
+    <div class="readouts" id="money-saved">$0.00</div>
+    
+    <button id="deposit-button" class="main-page-button">Deposit Check</button>
+<!-- Create a table to store checks that have been deposited so far -->
+    <div id="checks-deposited">
+        <table id="checks">
+            <thead>
+            <tr id="heading-row">
+                <th>Check Amount</th><th class="percentage-column">Percentage Saved</th><th>Savings</th><th class="remove-check-heading">Remove Check</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+        </table>
+    </div>
+    <!-- Create readout showing how much is in savings in total -->
+    <h2>Savings Total</h2>
+    <div class="readouts" id="savings-total">$0.00</div>
+    <button id="clear-check-history" class="main-page-button">Clear Check History</button>
+    </div>
+    
+</body>
+</html>
