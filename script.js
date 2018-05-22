@@ -102,7 +102,7 @@ window.addEventListener('load', function() {
             }
         }
         renderTotal();
-    };
+    }
 });
 
 
