@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 //MODEL    
     let data = [];
 
-//VARIABLE DECLARATIONS
+//VARIABLES
     const checkInput = document.getElementById('check-input');
     const clearChecksButton = document.getElementById('clear-check-history');
     const depositButton = document.getElementById('deposit-button');
