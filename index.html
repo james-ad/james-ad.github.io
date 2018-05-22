@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="htmlPage">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,11 @@
     <input type="number" id="check-input" placeholder="$0.00">
  <!-- Make a slider to adjust the percentage of the check that is to be saved.
 Also, create divs to store slider readout and percentage readout -->
-    <input type="range" min="1" max="100" value="10" name="" id="percentage" class="slider">
+    <div id="percentage-input">
+        <input type="range" min="1" max="100" value="10" name="" id="percentage" class="slider">
+        <!-- <span id="info-icon">&#9432;</span>
+        <span id="info-message-id" class="info-message">Use directional keys for more precise control.</span> -->
+    </div>
     <div class="readouts" id="percentage-readout">10%</div>
     <div class="readouts" id="money-saved">$0.00</div>
     

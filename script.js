@@ -23,6 +23,9 @@ window.addEventListener('load', function() {
         data = [];
         renderTableEntry();
     });
+    
+    renderTableEntry();
+    renderPercentage();
 
 //FUNCTION DECLARATIONS
     function depositCheck() {
@@ -89,10 +92,10 @@ window.addEventListener('load', function() {
             // Find value in Savings category of table, remove it from the data array and update the Savings Total section of the page.
             for (let entry of data) {
                 let rmValue = target.parentNode.previousSibling.previousSibling.innerText;
-                rmValue = rmValue.replace(/\,/g,'').replace(/\$/g, '');
+                rmValue = Number(rmValue.replace(/\,/g,'').replace(/\$/g, ''));
                 
-                if (rmValue == entry.savingsAmount) {
-                    let index = data.indexOf(rmValue);
+                if (rmValue === entry.savingsAmount) {
+                    let index = data.indexOf(entry);
                     data.splice(index, 1);
                     break;
                 }
@@ -100,6 +103,12 @@ window.addEventListener('load', function() {
         }
         renderTotal();
     };
+
+    // window.addEventListener('resize', function() {
+    //     let htmlPage = document.getElementById('htmlPage');
+    //     console.log(htmlPage);
+    //     htmlPage.style.height='100%';
+    // });
     
 });
 
