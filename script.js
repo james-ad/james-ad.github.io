@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 //MODEL    
     let data = [];
 
-//GLOBAL VARIABLES
+//VARIABLE DECLARATIONS
     const checkInput = document.getElementById('check-input');
     const clearChecksButton = document.getElementById('clear-check-history');
     const depositButton = document.getElementById('deposit-button');
@@ -103,13 +103,6 @@ window.addEventListener('load', function() {
         }
         renderTotal();
     };
-
-    // window.addEventListener('resize', function() {
-    //     let htmlPage = document.getElementById('htmlPage');
-    //     console.log(htmlPage);
-    //     htmlPage.style.height='100%';
-    // });
-    
 });
 
 
